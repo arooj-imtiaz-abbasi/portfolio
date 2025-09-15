@@ -65,6 +65,11 @@ function initPuzzle() {
     const reframesContainer = document.getElementById('reframes-container');
     const scoreElement = document.getElementById('puzzle-score');
     
+    // Check if puzzle elements exist (only on home page)
+    if (!startButton || !thoughtsContainer || !reframesContainer) {
+        return; // Exit if not on home page
+    }
+    
     const puzzleData = [
         { thought: "I'm a failure", reframe: "I'm learning and growing" },
         { thought: "Everyone hates me", reframe: "Some people may not understand me" },
@@ -78,9 +83,11 @@ function initPuzzle() {
     let score = 0;
     let matches = 0;
     
-    startButton.addEventListener('click', () => {
-        startPuzzle();
-    });
+    if (startButton) {
+        startButton.addEventListener('click', () => {
+            startPuzzle();
+        });
+    }
     
     function startPuzzle() {
         // Shuffle and select 4 random pairs
@@ -215,6 +222,11 @@ function initBreathingVisualizer() {
     const phase2 = document.getElementById('phase-2');
     const phase3 = document.getElementById('phase-3');
     const phaseText = document.getElementById('phase-text');
+    
+    // Check if breathing visualizer elements exist (only on home page)
+    if (!startButton || !leftLung || !rightLung) {
+        return; // Exit if not on home page
+    }
     
     let isBreathing = false;
     let breathingInterval;
@@ -415,10 +427,12 @@ function initMobileMenu() {
         
         nav.parentNode.appendChild(mobileMenu);
         
-        mobileMenuButton.addEventListener('click', () => {
-            const isVisible = mobileMenu.style.display !== 'none';
-            mobileMenu.style.display = isVisible ? 'none' : 'block';
-        });
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                const isVisible = mobileMenu.style.display !== 'none';
+                mobileMenu.style.display = isVisible ? 'none' : 'block';
+            });
+        }
     }
 }
 
