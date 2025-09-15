@@ -454,8 +454,23 @@ document.addEventListener('DOMContentLoaded', handleContactForm);
 // Update copyright year dynamically
 function updateCopyrightYear() {
     const currentYear = new Date().getFullYear();
-    const yearElements = document.querySelectorAll('#current-year');
-    yearElements.forEach(element => {
-        element.textContent = currentYear;
-    });
+    
+    // Try multiple times to ensure DOM is ready
+    const updateYear = () => {
+        const yearElements = document.querySelectorAll('#current-year');
+        
+        if (yearElements.length > 0) {
+            yearElements.forEach(element => {
+                element.textContent = currentYear;
+            });
+        } else {
+            // Retry after a short delay if elements not found
+            setTimeout(updateYear, 100);
+        }
+    };
+    
+    updateYear();
 }
+
+// Run immediately and also on DOM ready
+updateCopyrightYear();
