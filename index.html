@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Arooj Abbasi - Clinical Psychologist & Family Therapist</title>
+    <meta name="description" content="Licensed Clinical Psychologist and Family Therapist specializing in CBT, DBT, ACT, and clinical assessments. Book a consultation today.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mental-teal': '#4A9B8E',
+                        'mental-blue': '#6B9BD2',
+                        'mental-grey': '#8B9BA8',
+                        'mental-warm': '#F7F3F0',
+                        'mental-dark': '#2D3748'
+                    },
+                    fontFamily: {
+                        'serif': ['Georgia', 'serif'],
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-mental-warm text-mental-dark font-sans">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-mental-teal rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">AA</span>
+                    </div>
+                    <span class="font-semibold text-lg">Dr. Arooj Abbasi</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-mental-dark hover:text-mental-teal transition-colors">Home</a>
+                    <a href="#services" class="text-mental-dark hover:text-mental-teal transition-colors">Services</a>
+                    <a href="#experience" class="text-mental-dark hover:text-mental-teal transition-colors">Experience</a>
+                    <a href="case-studies.html" class="text-mental-dark hover:text-mental-teal transition-colors">Case Studies</a>
+                    <a href="assessments.html" class="text-mental-dark hover:text-mental-teal transition-colors">Assessments</a>
+                    <a href="contact.html" class="text-mental-dark hover:text-mental-teal transition-colors">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="https://wa.me/923035229634?text=Hello%20Dr.%20Arooj%20Abbasi%2C%20I%20would%20like%20to%20book%20a%20consultation." 
+                       target="_blank" 
+                       class="bg-green-500 text-white px-4 py-2 rounded-full text-sm hover:bg-green-600 transition-colors flex items-center space-x-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                        </svg>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arooj-abbasi-13b50915b/" 
+                       target="_blank" 
+                       class="bg-mental-blue text-white px-4 py-2 rounded-full text-sm hover:bg-blue-600 transition-colors flex items-center space-x-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 pb-16 bg-gradient-to-br from-mental-teal/10 to-mental-blue/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-4xl lg:text-6xl font-serif font-bold text-mental-dark leading-tight">
+                            Dr. Arooj Abbasi
+                        </h1>
+                        <p class="text-xl lg:text-2xl text-mental-teal font-medium">
+                            Licensed Clinical Psychologist & Family Therapist
+                        </p>
+                        <p class="text-lg text-mental-grey">
+                            Head of Library & Wellbeing | IB & Cambridge Educator | Founder - Mind Matters
+                        </p>
+                    </div>
+                    
+                    <p class="text-lg text-mental-dark leading-relaxed">
+                        Provides clinical assessments (IQ tests, personality tests, and diagnostic tools), 
+                        psychotherapy (CBT, DBT, ACT etc.), crisis intervention, research and academic writing, 
+                        psychoeducation and workshops.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/923035229634?text=Hello%20Dr.%20Arooj%20Abbasi%2C%20I%20would%20like%20to%20book%20a%20consultation." 
+                           target="_blank" 
+                           class="bg-mental-teal text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-teal-600 transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg text-center">
+                            Book a Consultation
+                        </a>
+                        <a href="case-studies.html" 
+                           class="bg-white text-mental-teal px-8 py-4 rounded-full text-lg font-semibold border-2 border-mental-teal hover:bg-mental-teal hover:text-white transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg text-center">
+                            View Case Studies
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <!-- Animated Brain/Neural Network Visualization -->
+                    <div class="w-80 h-80 mx-auto relative">
+                        <!-- Main brain-like shape -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-mental-teal/20 to-mental-blue/20 rounded-full animate-pulse-slow"></div>
+                        
+                        <!-- Neural network nodes -->
+                        <div class="absolute top-8 left-8 w-4 h-4 bg-mental-teal rounded-full animate-ping"></div>
+                        <div class="absolute top-16 right-12 w-3 h-3 bg-mental-blue rounded-full animate-ping delay-300"></div>
+                        <div class="absolute bottom-20 left-12 w-5 h-5 bg-mental-teal rounded-full animate-ping delay-700"></div>
+                        <div class="absolute bottom-8 right-8 w-3 h-3 bg-mental-blue rounded-full animate-ping delay-1000"></div>
+                        <div class="absolute top-1/2 left-4 w-4 h-4 bg-mental-teal rounded-full animate-ping delay-500"></div>
+                        <div class="absolute top-1/3 right-6 w-3 h-3 bg-mental-blue rounded-full animate-ping delay-1200"></div>
+                        
+                        <!-- Connecting lines (neural pathways) -->
+                        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 320 320">
+                            <path d="M80 80 Q160 40 240 80" stroke="#4A9B8E" stroke-width="2" fill="none" opacity="0.6" class="animate-pulse">
+                                <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M80 160 Q160 120 240 160" stroke="#6B9BD2" stroke-width="2" fill="none" opacity="0.6" class="animate-pulse delay-1000">
+                                <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M80 240 Q160 200 240 240" stroke="#4A9B8E" stroke-width="2" fill="none" opacity="0.6" class="animate-pulse delay-2000">
+                                <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M80 80 Q160 160 80 240" stroke="#6B9BD2" stroke-width="2" fill="none" opacity="0.6" class="animate-pulse delay-500">
+                                <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M240 80 Q160 160 240 240" stroke="#4A9B8E" stroke-width="2" fill="none" opacity="0.6" class="animate-pulse delay-1500">
+                                <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                        </svg>
+                        
+                        <!-- Central focus point -->
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
+                            <div class="w-12 h-12 bg-gradient-to-br from-mental-teal to-mental-blue rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating therapy symbols -->
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-mental-blue/30 rounded-full flex items-center justify-center animate-bounce">
+                            <svg class="w-4 h-4 text-mental-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="absolute -bottom-2 -left-2 w-8 h-8 bg-mental-teal/30 rounded-full flex items-center justify-center animate-bounce delay-1000">
+                            <svg class="w-4 h-4 text-mental-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <div class="absolute top-1/4 -left-4 w-6 h-6 bg-mental-blue/40 rounded-full flex items-center justify-center animate-bounce delay-500">
+                            <svg class="w-3 h-3 text-mental-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-serif font-bold text-mental-dark mb-4">Services</h2>
+                <p class="text-lg text-mental-grey max-w-3xl mx-auto">
+                    Comprehensive mental health services tailored to your needs
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-mental-warm/50 p-8 rounded-xl hover:shadow-lg transition-all duration-300 hover:translate-y-[-2px]">
+                    <div class="w-12 h-12 bg-mental-teal rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-mental-dark mb-4">Clinical Assessments</h3>
+                    <p class="text-mental-grey">IQ tests, personality assessments, and comprehensive diagnostic tools for accurate evaluation.</p>
+                </div>
+                
+                <div class="bg-mental-warm/50 p-8 rounded-xl hover:shadow-lg transition-all duration-300 hover:translate-y-[-2px]">
+                    <div class="w-12 h-12 bg-mental-blue rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-mental-dark mb-4">Psychotherapy</h3>
+                    <p class="text-mental-grey">CBT, DBT, ACT, and other evidence-based therapeutic approaches for lasting change.</p>
+                </div>
+                
+                <div class="bg-mental-warm/50 p-8 rounded-xl hover:shadow-lg transition-all duration-300 hover:translate-y-[-2px]">
+                    <div class="w-12 h-12 bg-mental-teal rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-mental-dark mb-4">Crisis Intervention</h3>
+                    <p class="text-mental-grey">Immediate support and intervention during mental health crises and emergencies.</p>
+                </div>
+                
+                <div class="bg-mental-warm/50 p-8 rounded-xl hover:shadow-lg transition-all duration-300 hover:translate-y-[-2px]">
+                    <div class="w-12 h-12 bg-mental-blue rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-mental-dark mb-4">Research & Academic Writing</h3>
+                    <p class="text-mental-grey">Professional research services and academic writing support for mental health topics.</p>
+                </div>
+                
+                <div class="bg-mental-warm/50 p-8 rounded-xl hover:shadow-lg transition-all duration-300 hover:translate-y-[-2px]">
+                    <div class="w-12 h-12 bg-mental-teal rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-mental-dark mb-4">Psychoeducation & Workshops</h3>
+                    <p class="text-mental-grey">Educational workshops and training programs for individuals and organizations.</p>
+                </div>
+                
+                <div class="bg-mental-warm/50 p-8 rounded-xl hover:shadow-lg transition-all duration-300 hover:translate-y-[-2px]">
+                    <div class="w-12 h-12 bg-mental-blue rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-mental-dark mb-4">Career & Family Counseling</h3>
+                    <p class="text-mental-grey">Specialized counseling for career development and family relationship issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 bg-mental-warm/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-serif font-bold text-mental-dark mb-4">Specialized Skills</h2>
+                <p class="text-lg text-mental-grey max-w-3xl mx-auto">
+                    Evidence-based therapeutic approaches and assessment tools
+                </p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-mental-teal text-white px-6 py-3 rounded-full text-sm font-medium">CBT</span>
+                <span class="bg-mental-blue text-white px-6 py-3 rounded-full text-sm font-medium">Cognitive Behavioral Therapy</span>
+                <span class="bg-mental-teal text-white px-6 py-3 rounded-full text-sm font-medium">Self-hypnosis</span>
+                <span class="bg-mental-blue text-white px-6 py-3 rounded-full text-sm font-medium">DBT</span>
+                <span class="bg-mental-teal text-white px-6 py-3 rounded-full text-sm font-medium">Counseling</span>
+                <span class="bg-mental-blue text-white px-6 py-3 rounded-full text-sm font-medium">Career Counseling</span>
+                <span class="bg-mental-teal text-white px-6 py-3 rounded-full text-sm font-medium">Family Therapy</span>
+                <span class="bg-mental-blue text-white px-6 py-3 rounded-full text-sm font-medium">Clinical Assessments</span>
+                <span class="bg-mental-teal text-white px-6 py-3 rounded-full text-sm font-medium">Crisis Intervention</span>
+                <span class="bg-mental-blue text-white px-6 py-3 rounded-full text-sm font-medium">Research & Academic Writing</span>
+                <span class="bg-mental-teal text-white px-6 py-3 rounded-full text-sm font-medium">Psychoeducation & Workshops</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-serif font-bold text-mental-dark mb-4">Professional Experience</h2>
+                <p class="text-lg text-mental-grey max-w-3xl mx-auto">
+                    Over 8 years of dedicated service in clinical psychology and education
+                </p>
+            </div>
+            
+            <div class="space-y-8">
+                <div class="bg-mental-warm/30 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-mental-dark">Head Start School</h3>
+                        <span class="text-mental-teal font-medium">September 2019 - Present (6 years 1 month)</span>
+                    </div>
+                    <p class="text-mental-grey mb-2">Cambridge Faculty/ Librarian</p>
+                    <p class="text-sm text-mental-grey">Islamabad, Pakistan</p>
+                </div>
+                
+                <div class="bg-mental-warm/30 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-mental-dark">Licensed Clinical Psychologist</h3>
+                        <span class="text-mental-teal font-medium">September 2019 - May 2024 (4 years 9 months)</span>
+                    </div>
+                    <p class="text-mental-grey mb-2">Independent Practice</p>
+                    <p class="text-sm text-mental-grey">Pakistan</p>
+                </div>
+                
+                <div class="bg-mental-warm/30 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-mental-dark">World Health Organization (WHO)</h3>
+                        <span class="text-mental-teal font-medium">March 2018 - August 2021 (3 years 6 months)</span>
+                    </div>
+                    <p class="text-mental-grey mb-2">Consultant Clinical Psychologist</p>
+                    <p class="text-sm text-mental-grey">Pakistan</p>
+                </div>
+                
+                <div class="bg-mental-warm/30 p-8 rounded-xl hover:shadow-lg transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-mental-dark">Benazir Bhutto Hospital</h3>
+                        <span class="text-mental-teal font-medium">April 2016 - May 2022 (6 years 2 months)</span>
+                    </div>
+                    <p class="text-mental-grey mb-2">Trainee Clinical Psychologist</p>
+                    <p class="text-sm text-mental-grey">Islamabad, Pakistan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Section -->
+    <section class="py-16 bg-gradient-to-br from-mental-teal/10 to-mental-blue/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-serif font-bold text-mental-dark mb-4">Interactive Tools</h2>
+                <p class="text-lg text-mental-grey max-w-3xl mx-auto">
+                    Experience therapeutic techniques through interactive activities
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Cognitive Puzzle -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-mental-dark mb-4">Cognitive Restructuring Puzzle</h3>
+                    <p class="text-mental-grey mb-6">Match automatic thoughts with healthier reframes</p>
+                    <div id="puzzle-container" class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-2">
+                                <h4 class="font-medium text-mental-dark">Automatic Thoughts</h4>
+                                <div id="thoughts-container" class="space-y-2"></div>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-medium text-mental-dark">Reframes</h4>
+                                <div id="reframes-container" class="space-y-2"></div>
+                            </div>
+                        </div>
+                        <button id="start-puzzle" class="bg-mental-teal text-white px-6 py-3 rounded-full hover:bg-teal-600 transition-colors">
+                            Start Puzzle
+                        </button>
+                        <div id="puzzle-score" class="text-center text-mental-grey"></div>
+                    </div>
+                </div>
+                
+                <!-- Breathing Visualizer -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-mental-dark mb-4">Mindfulness Breathing</h3>
+                    <p class="text-mental-grey mb-6">Practice 4-4-6 breathing technique with lung visualization</p>
+                    <div class="text-center">
+                        <!-- Lung-like breathing visualization -->
+                        <div class="mb-8">
+                            <div id="breathing-lungs" class="w-48 h-32 mx-auto relative mb-6">
+                                <!-- Left lung -->
+                                <div id="left-lung" class="absolute left-0 top-0 w-20 h-32 bg-gradient-to-b from-mental-teal/30 to-mental-teal/60 rounded-l-full transition-all duration-1000 ease-in-out">
+                                    <div class="absolute inset-2 bg-gradient-to-b from-mental-teal/40 to-mental-teal/80 rounded-l-full"></div>
+                                    <div class="absolute inset-4 bg-gradient-to-b from-mental-teal/50 to-mental-teal/90 rounded-l-full"></div>
+                                </div>
+                                <!-- Right lung -->
+                                <div id="right-lung" class="absolute right-0 top-0 w-20 h-32 bg-gradient-to-b from-mental-blue/30 to-mental-blue/60 rounded-r-full transition-all duration-1000 ease-in-out">
+                                    <div class="absolute inset-2 bg-gradient-to-b from-mental-blue/40 to-mental-blue/80 rounded-r-full"></div>
+                                    <div class="absolute inset-4 bg-gradient-to-b from-mental-blue/50 to-mental-blue/90 rounded-r-full"></div>
+                                </div>
+                                <!-- Central heart area -->
+                                <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-red-400 rounded-full opacity-60"></div>
+                                <!-- Breathing particles -->
+                                <div id="breathing-particles" class="absolute inset-0 pointer-events-none">
+                                    <!-- Particles will be added dynamically -->
+                                </div>
+                            </div>
+                            <!-- Breathing text - now properly positioned -->
+                            <div id="breathing-text" class="text-center text-mental-dark font-semibold text-lg mb-4">
+                                Ready to breathe
+                            </div>
+                        </div>
+                        
+                        <!-- Progress indicator -->
+                        <div class="mb-8">
+                            <div class="flex justify-center space-x-3 mb-3">
+                                <div id="phase-1" class="w-4 h-4 bg-mental-grey rounded-full transition-colors duration-300"></div>
+                                <div id="phase-2" class="w-4 h-4 bg-mental-grey rounded-full transition-colors duration-300"></div>
+                                <div id="phase-3" class="w-4 h-4 bg-mental-grey rounded-full transition-colors duration-300"></div>
+                            </div>
+                            <div class="text-sm text-mental-grey font-medium">
+                                <span id="phase-text">Inhale • Hold • Exhale</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Controls -->
+                        <div class="space-y-6">
+                            <button id="start-breathing" class="bg-mental-blue text-white px-8 py-4 rounded-full hover:bg-blue-600 transition-all duration-300 hover:scale-105 font-semibold text-lg shadow-lg">
+                                Start Breathing Exercise
+                            </button>
+                            <div id="breathing-instructions" class="text-sm text-mental-grey space-y-2 bg-mental-warm/50 p-4 rounded-lg">
+                                <p class="font-medium text-mental-dark mb-2">Instructions:</p>
+                                <p>• Inhale slowly for 4 counts</p>
+                                <p>• Hold your breath for 4 counts</p>
+                                <p>• Exhale slowly for 6 counts</p>
+                                <p>• Repeat the cycle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-mental-teal text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-serif font-bold mb-4">Ready to Begin Your Journey?</h2>
+            <p class="text-xl mb-8 opacity-90">
+                Book a consultation or explore our case studies to learn more about our approach
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/923035229634?text=Hello%20Dr.%20Arooj%20Abbasi%2C%20I%20would%20like%20to%20book%20a%20consultation." 
+                   target="_blank" 
+                   class="bg-white text-mental-teal px-8 py-4 rounded-full text-lg font-semibold hover:bg-mental-warm transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg">
+                    Book Consultation
+                </a>
+                <a href="case-studies.html" 
+                   class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-mental-teal transition-all duration-300 hover:translate-y-[-2px] hover:shadow-lg">
+                    View Case Studies
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-mental-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-mental-teal rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">AA</span>
+                        </div>
+                        <span class="font-semibold text-lg">Dr. Arooj Abbasi</span>
+                    </div>
+                    <p class="text-mental-grey">
+                        Licensed Clinical Psychologist & Family Therapist
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4">Contact</h3>
+                    <div class="space-y-2 text-mental-grey">
+                        <p>Phone: 0303-5229634</p>
+                        <p>Email: m.aroojabbasi@gmail.com</p>
+                        <div class="flex space-x-4 mt-4">
+                            <a href="https://wa.me/923035229634?text=Hello%20Dr.%20Arooj%20Abbasi%2C%20I%20would%20like%20to%20book%20a%20consultation." 
+                               target="_blank" 
+                               class="text-mental-teal hover:text-white transition-colors">
+                                WhatsApp
+                            </a>
+                            <a href="https://www.linkedin.com/in/arooj-abbasi-13b50915b/" 
+                               target="_blank" 
+                               class="text-mental-blue hover:text-white transition-colors">
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4">Services</h3>
+                    <div class="space-y-2 text-mental-grey text-sm">
+                        <p>Clinical Assessments</p>
+                        <p>Psychotherapy (CBT, DBT, ACT)</p>
+                        <p>Crisis Intervention</p>
+                        <p>Family Therapy</p>
+                        <p>Career Counseling</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-mental-grey/20 mt-8 pt-8 text-center text-mental-grey">
+                <p>&copy; <span id="current-year">2024</span> Dr. Arooj Abbasi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923035229634?text=Hello%20Dr.%20Arooj%20Abbasi%2C%20I%20would%20like%20to%20book%20a%20consultation." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+        </svg>
+    </a>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
