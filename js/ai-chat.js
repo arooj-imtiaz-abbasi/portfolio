@@ -229,7 +229,7 @@ Current assessment data: ${JSON.stringify(this.assessmentData)}`;
         if (isCrisis) {
             return {
                 isCrisis: true,
-                message: `I'm concerned about your safety. Please contact emergency services immediately: Pakistan Emergency: ${AI_CONFIG.emergencyContacts.pakistan}, or go to your nearest hospital. You can also reach Dr. Arooj directly at ${AI_CONFIG.emergencyContacts.drArooj}.`
+                message: `I'm concerned about your safety. Please contact emergency services immediately: Pakistan Emergency: ${AI_CONFIG.emergencyContacts.pakistan}, or go to your nearest hospital. You can also reach Arooj directly at ${AI_CONFIG.emergencyContacts.drArooj}.`
             };
         }
 
@@ -243,7 +243,7 @@ Current assessment data: ${JSON.stringify(this.assessmentData)}`;
 
         if (message.includes('anxiety') || message.includes('worried')) {
             suggestions.push('Try the breathing exercise on the home page');
-            suggestions.push('Consider booking a consultation with Dr. Arooj');
+            suggestions.push('Consider booking a consultation with Arooj');
         }
 
         if (message.includes('depression') || message.includes('sad')) {
@@ -252,7 +252,7 @@ Current assessment data: ${JSON.stringify(this.assessmentData)}`;
         }
 
         if (message.includes('therapy') || message.includes('counseling')) {
-            suggestions.push('Book a consultation with Dr. Arooj');
+            suggestions.push('Book a consultation with Arooj');
             suggestions.push('Read about our therapy approaches');
         }
 
@@ -351,7 +351,7 @@ Current assessment data: ${JSON.stringify(this.assessmentData)}`;
             recommendations.push('Practice active listening and communication skills');
         }
         
-        recommendations.push('Book a consultation with Dr. Arooj for personalized care');
+        recommendations.push('Book a consultation with Arooj for personalized care');
         
         return recommendations;
     }
@@ -423,7 +423,7 @@ async function sendMessage() {
     } catch (error) {
         console.error('Error in sendMessage:', error);
         removeTypingIndicator();
-        addMessageToChat("I'm sorry, I'm having trouble right now. Please try again or contact Dr. Arooj directly.", 'assistant', true);
+        addMessageToChat("I'm sorry, I'm having trouble right now. Please try again or contact Arooj directly.", 'assistant', true);
     }
 }
 
@@ -594,7 +594,7 @@ function clearChat() {
 
 // Toggle settings
 function toggleSettings() {
-    alert('Settings feature coming soon! For now, you can clear the chat or contact Dr. Arooj directly.');
+    alert('Settings feature coming soon! For now, you can clear the chat or contact Arooj directly.');
 }
 
 // Download assessment

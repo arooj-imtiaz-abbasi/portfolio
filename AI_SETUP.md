@@ -1,7 +1,7 @@
 # AI Mental Health Assistant Setup Guide
 
 ## Overview
-This AI chat page provides an interactive mental health assistant that can help users with basic mental health support, assessment, and guidance. The assistant is designed to work with Dr. Arooj Abbasi's practice and encourages users to book consultations for professional care.
+This AI chat page provides an interactive mental health assistant that can help users with basic mental health support, assessment, and guidance. The assistant is designed to work with Arooj Abbasi's practice and encourages users to book consultations for professional care.
 
 ## Features
 - **Interactive Chat Interface**: Real-time conversation with AI assistant
@@ -9,7 +9,7 @@ This AI chat page provides an interactive mental health assistant that can help 
 - **Mental Health Assessment**: Tracks conversation patterns and provides basic assessment
 - **Quick Actions**: Pre-defined buttons for common mental health topics
 - **Fallback Responses**: Works even when API is not available
-- **Professional Integration**: Direct links to book consultations with Dr. Arooj
+- **Professional Integration**: Direct links to book consultations with Arooj
 
 ## Setup Instructions
 
@@ -42,7 +42,7 @@ This AI chat page provides an interactive mental health assistant that can help 
 ### Crisis Detection
 The system automatically detects crisis keywords and provides emergency contacts:
 - Pakistan Emergency: 112
-- Dr. Arooj: 0303-5229634
+- Arooj: 0303-5229634
 - Email: m.aroojabbasi@gmail.com
 
 ### Assessment Categories
@@ -154,10 +154,10 @@ For technical support or questions about the AI assistant:
 - Test with different API keys if issues persist
 
 For mental health support:
-- Contact Dr. Arooj directly at 0303-5229634
+- Contact Arooj directly at 0303-5229634
 - Use WhatsApp for immediate assistance
 - Visit the main website for more information
 
 ## License
 
-This AI assistant is designed specifically for Dr. Arooj Abbasi's practice. Please ensure proper licensing and compliance with local regulations before use.
+This AI assistant is designed specifically for Arooj Abbasi's practice. Please ensure proper licensing and compliance with local regulations before use.

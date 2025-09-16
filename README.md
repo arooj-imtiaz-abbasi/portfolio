@@ -1,6 +1,6 @@
-# Dr. Arooj Abbasi - Clinical Psychologist Portfolio
+# Arooj Abbasi - Clinical Psychologist Portfolio
 
-A modern, responsive portfolio website for Dr. Arooj Abbasi, Licensed Clinical Psychologist and Family Therapist. Built with HTML5, Tailwind CSS, and vanilla JavaScript.
+A modern, responsive portfolio website for Arooj Abbasi, Licensed Clinical Psychologist and Family Therapist. Built with HTML5, Tailwind CSS, and vanilla JavaScript.
 
 ## 🌟 Features
 
@@ -187,7 +187,7 @@ The site can be deployed to any static hosting service:
 
 ## 📄 License
 
-This project is created for Dr. Arooj Abbasi's professional portfolio. All content and design are proprietary.
+This project is created for Arooj Abbasi's professional portfolio. All content and design are proprietary.
 
 ## 🤝 Support
 

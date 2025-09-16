@@ -11,7 +11,7 @@
 - ✅ **Title Tags**: Optimized for each page with location and service keywords
 - ✅ **Meta Descriptions**: Compelling, keyword-rich descriptions under 160 characters
 - ✅ **Keywords**: Targeted mental health and psychology keywords
-- ✅ **Author**: Dr. Arooj Abbasi attribution
+- ✅ **Author**: Arooj Abbasi attribution
 - ✅ **Robots**: Proper indexing directives
 - ✅ **Language**: English specification
 - ✅ **Canonical URLs**: Prevent duplicate content issues
@@ -23,7 +23,7 @@
 - ✅ **Site Name**: Consistent branding across platforms
 
 ### 4. **Structured Data (JSON-LD)**
-- ✅ **Person Schema**: Dr. Arooj Abbasi professional profile
+- ✅ **Person Schema**: Arooj Abbasi professional profile
 - ✅ **Medical Business Schema**: Practice information and services
 - ✅ **Service Catalog**: Detailed therapy services offered
 - ✅ **Contact Information**: Phone, email, address
@@ -40,27 +40,27 @@
 ### 6. **Page-Specific Optimizations**
 
 #### Home Page (index.html)
-- **Title**: "Dr. Arooj Abbasi - Licensed Clinical Psychologist | Mental Health Therapy in Islamabad"
+- **Title**: "Arooj Abbasi - Licensed Clinical Psychologist | Mental Health Therapy in Islamabad"
 - **Focus Keywords**: clinical psychologist, mental health therapy, Islamabad
 - **Structured Data**: Person + Medical Business schemas
 
 #### Case Studies (case-studies.html)
-- **Title**: "Mental Health Case Studies | Dr. Arooj Abbasi - Clinical Psychologist"
+- **Title**: "Mental Health Case Studies | Arooj Abbasi - Clinical Psychologist"
 - **Focus Keywords**: mental health case studies, therapy outcomes, CBT case studies
 - **Content**: Real therapy examples and success stories
 
 #### Assessments (assessments.html)
-- **Title**: "Clinical Assessments & Mental Health Services | Dr. Arooj Abbasi"
+- **Title**: "Clinical Assessments & Mental Health Services | Arooj Abbasi"
 - **Focus Keywords**: clinical assessments, psychological evaluation, mental health services
 - **Content**: Professional evaluation services
 
 #### Contact (contact.html)
-- **Title**: "Contact Dr. Arooj Abbasi | Book Mental Health Consultation in Islamabad"
+- **Title**: "Contact Arooj Abbasi | Book Mental Health Consultation in Islamabad"
 - **Focus Keywords**: contact psychologist, book therapy appointment, mental health consultation
 - **Content**: Contact information and appointment booking
 
 #### AI Chat (ai-chat.html)
-- **Title**: "AI Mental Health Assistant | Free Online Therapy Chat - Dr. Arooj Abbasi"
+- **Title**: "AI Mental Health Assistant | Free Online Therapy Chat - Arooj Abbasi"
 - **Focus Keywords**: AI mental health assistant, online therapy chat, mental health AI
 - **Content**: Free AI-powered mental health support
 

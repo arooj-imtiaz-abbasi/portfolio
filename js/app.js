@@ -1,4 +1,4 @@
-// Main JavaScript file for Dr. Arooj Abbasi Portfolio
+// Main JavaScript file for Arooj Abbasi Portfolio
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all interactive features
@@ -457,7 +457,7 @@ function handleContactForm() {
             e.preventDefault();
             // Here you would typically send the form data to a server
             // For now, we'll just show a success message
-            alert('Thank you for your message! Dr. Arooj will get back to you soon.');
+            alert('Thank you for your message! Arooj will get back to you soon.');
         });
     }
 }
